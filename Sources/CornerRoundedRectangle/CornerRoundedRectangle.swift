@@ -25,6 +25,11 @@ public struct CornerRoundedRectangle: Shape {
     /// The edges to apply round corner
     public var edges: CornerSet = .all
     
+    public init(cornerRadius: CGFloat, edges: CornerSet) {
+        self.cornerRadius = cornerRadius
+        self.edges = edges
+    }
+    
     public func path(in rect: CGRect) -> Path {
         var path = Path()
         let width = rect.size.width
