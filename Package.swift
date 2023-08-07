@@ -22,8 +22,5 @@ let package = Package(
         .target(
             name: "CornerRoundedRectangle",
             dependencies: []),
-        .testTarget(
-            name: "CornerRoundedRectangleTests",
-            dependencies: ["CornerRoundedRectangle"]),
     ]
 )
